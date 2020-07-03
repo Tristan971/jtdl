@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JtdlServerApplication {
+public class JtdlServer {
 
-    public static void main(String[] args) {
-        SpringApplication.run(JtdlServerApplication.class, args);
+    public static void main(String... args) {
+        SpringApplication.run(JtdlServer.class, args);
     }
 
 }

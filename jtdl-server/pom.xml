@@ -24,6 +24,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>14</source>
+                    <target>14</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                    <annotationProcessors>
+                        <annotationProcessor>
+                            <groupId>org.immutables</groupId>
+                            <artifactId>value</artifactId>
+                            <version>2.8.8</version>
+                        </annotationProcessor>
+                    </annotationProcessors>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -36,6 +52,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.immutables</groupId>
+            <artifactId>value</artifactId>
+            <version>2.8.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.treatwell</groupId>
+            <artifactId>immutables-styles</artifactId>
+            <version>2.2.0</version>
         </dependency>
 
         <!-- Test -->
@@ -52,12 +79,6 @@
         </dependency>
 
         <!-- Ops -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>

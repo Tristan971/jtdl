@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/ytdl/download
+Content-Type: application/json
+
+{
+  "source": "https://www.youtube.com/watch?v=uKxyLmbOc0Q",
+  "destination": "/home/tristan"
+}
