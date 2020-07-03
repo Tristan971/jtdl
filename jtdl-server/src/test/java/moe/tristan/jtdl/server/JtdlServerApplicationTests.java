@@ -1,10 +1,10 @@
-package moe.tristan.jtdl;
+package moe.tristan.jtdl.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JtdlApplicationTests {
+class JtdlServerApplicationTests {
 
     @Test
     void contextLoads() {
